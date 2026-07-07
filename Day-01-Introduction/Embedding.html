@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Embedding JavaScript </title>
+
+    <!-- 2. Internal JavaScript -->
+    <script>
+        function showWelcome() {
+            alert("Welcome! This ran from Internal JavaScript.");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Embedding JavaScript</h1>
+
+     <h2>Inline JS</h2>
+    <button onclick="alert('Hello! This ran from Inline JavaScript.')">
+        Click Me (Inline)
+    </button>
+
+    <!-- Calls the Internal JavaScript function defined above -->
+    <h2>Internal JS</h2>
+    <button onclick="showWelcome()">
+        Click Me (Internal)
+    </button>
+
+    <noscript>
+        Please enable JavaScript to use this site properly.
+    </noscript>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
